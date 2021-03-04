@@ -9,6 +9,12 @@
   copies or substantial portions of the Software.
 */
 
+//Roger Cheek notes feb/march 2021
+//This runs on an feather huzzah32 and recieves temp data from a remote V8 trigboard
+//the trigboard has the mac addr of the target esp32 running this code.
+//It uses ESP NOW to communicate.
+//The remote trigboard does not wait for confirmation, as this would take time and battery
+
 #include <esp_now.h>
 #include <WiFi.h>
 
