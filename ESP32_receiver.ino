@@ -11,6 +11,7 @@
 
 //Roger Cheek notes feb/march 2021
 //This runs on an feather huzzah32 and recieves temp data from a remote V8 trigboard
+//Data is sent only when the trigboard detects a change in the temp.
 //the trigboard has the mac addr of the target esp32 running this code.
 //It uses ESP NOW to communicate.
 //The remote trigboard does not wait for confirmation, as this would take time and battery
